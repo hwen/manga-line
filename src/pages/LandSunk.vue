@@ -16,6 +16,9 @@ export default {
       items
     }
   },
+  created () {
+    logs('land sunk part')
+  },
   methods: {
 
   }
