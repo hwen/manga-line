@@ -52,7 +52,7 @@ export default {
     right: 0;
     margin: auto;
     opacity: 0.2;
-    background: #8b80f9;
+    // background: #8b80f9;
   }
   .manga-triangle {
     z-index: 2;
