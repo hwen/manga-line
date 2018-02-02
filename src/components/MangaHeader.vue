@@ -6,6 +6,9 @@
   .manga-triangle
 </template>
 <script>
+const Base = process.env.NODE_ENV === 'gh'
+  ? './../manga-line/assets'
+  : './../assets'
 export default {
   name: 'manga-header',
   props: {
@@ -21,7 +24,7 @@ export default {
   computed: {
     styleObj () {
       return {
-        background: `url(./../assets/${this.background})`
+        background: `url(${Base}/${this.background})`
       }
     }
   }
